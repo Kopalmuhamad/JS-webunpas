@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suit Jawa</title>
+</head>
+<body>
+    
+    <script>
+        // Menentukan Pilihan User
+        let pilihanUser = prompt('Pilih: Gajah,Semut,Manusia')
+
+        let hasil ='';
+
+        // Menangkap Pilihan Computer
+        // Menentukan Bilangan Random
+        let comp = Math.random();
+
+        if (comp < 0.37) {
+            comp = 'gajah'
+        }
+
+        else if (comp > 0.37 && comp < 0.57) {
+            comp = 'semut'
+        }
+
+        else {
+            comp = 'manusia'
+        }
+        console.log(comp)
+
+        if (pilihanUser == comp) {
+            hasil = 'SERI'
+        }
+
+        else if (pilihanUser == 'gajah') {
+            hasil = (comp == 'manusia') ? 'Menang' : 'Kalah';
+        }
+        else if (pilihanUser == 'manusia') {
+            hasil = (comp == 'semut') ? 'Menang' : 'Kalah';
+        }
+        else if (pilihanUser == 'semut') {
+            hasil = (comp == 'gajah') ? 'Menang' : 'Kalah';
+        }
+        else (
+            hasil = 'anda memasukkan yang salah'
+        )
+
+        alert(`kamu memilih ${pilihanUser} dan computer memilih ${comp} Maka Hasilnya Kamu ${hasil}`)
+    </script>
+</body>
+</html>

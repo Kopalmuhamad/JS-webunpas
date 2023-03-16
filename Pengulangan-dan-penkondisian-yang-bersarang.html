@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pengulangan dan Pengkondisian Yang bersarang</title>
+</head>
+
+<body>
+
+    <script>
+        var star = '';
+        for (var i = 0; i < 5; i++) {
+            for (var j = 0; j <= i; j++) {
+                star += 'x';
+            }
+            star += '\n';
+        }
+
+        for (var z = 5; z > 0; z--) {
+            for (a = 0; a < z; a++) {
+                star += 'x'
+            }
+            star += '\n'
+        }
+        console.log(star)
+    </script>
+</body>
+
+</html>
